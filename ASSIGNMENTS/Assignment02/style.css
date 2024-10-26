@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e7f5e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.contact-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(2, 5, 9, 0.2);
+    width: 100%;
+    max-width: 600px; 
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form .input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.input-field {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-field label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-field input,
+.input-field textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-field textarea {
+    resize: none;
+    height: 120px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Space between boxes */
+}
+
+.radio-box {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.radio-box input[type="radio"] {
+    display: none;
+}
+
+.radio-box label {
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.radio-box input[type="radio"]:checked + label {
+    background-color: #008060;
+    color: #fff;
+    border-color: #008060;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.checkbox-field {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.checkbox-field input {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 7px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #008069;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #006e50;
+}
